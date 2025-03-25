@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-white">
+    <h1 class="text-center"> Quizz App</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-6 col-lg-5">
+            <button onclick="start(event);"class="btn btn-success my-3 w-100">Start</button>
+            <div class="card p-4" style="display: none;" id="card">
+                
+                <div class="que p-4" id="queId">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto at accusantium ea optio minus, sit excepturi iure eum similique eos! Ea, quas laboriosam in molestiae nobis omnis nam eius tenetur.
+                </div>
+                <div class="options mt-5">
+                    <div class="opt p-1" onclick="checkAns(event,1);">
+                        <span>1</span>
+                        <Span id="opt1Id">HTML</Span>
+                    </div>
+                    <div class="opt p-1" onclick="checkAns(event,2);">
+                        <span>2</span>
+                        <Span id="opt2Id">CSS</Span>
+                    </div>
+                    <div class="opt p-1" onclick="checkAns(event,3);">
+                        <span>3</span>
+                        <Span id="opt3Id">JavaSript</Span>
+                    </div>
+                    <div class="opt p-1" onclick="checkAns(event,4);">
+                        <span>4</span>
+                        <Span id="opt4Id">Python</Span>
+                    </div>   
+                      <button class=" btn btn-success mt-3" onclick="next();">Next</button>
+                    <div>
+                       <span>Question :</span>
+                       <span id="queNoid">0/0</span>
+                    </div>
+                    <div>
+                       <span>Correct :</span>
+                       <span id="correctId">0/0</span>
+                    </div>
+                    <div>
+                        <span>Incorrect :</span>
+                        <span id="incorrectId">0/0</span>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+ 
+    
+    <script src="./script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

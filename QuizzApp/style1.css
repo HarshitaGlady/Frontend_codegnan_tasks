@@ -1,0 +1,31 @@
+.que{
+    border:2px solid black !important;
+    border-radius:10px;
+    box-shadow: inset 0px 0px 10px black 
+    !important;
+}
+.opt{
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px black;
+
+
+}
+.options{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.opt>span:nth-child(1)
+{
+    border: 1px solid black;
+    display: inline-block;
+    height:25px;
+    width:25px;
+    border-radius: 100%;
+    text-align:center;
+}
+.opt:hover{
+    background-color: bisque;
+    cursor:pointer;
+}
